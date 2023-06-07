@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1>Chiisana Koi Uta Servey Form </h1>
+
+    <!-- form to survey - form này sẽ chứa toàn bộ các trường cần điền form-->
+    <form action="" id="form">
+
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Name
+            </label>
+            <!-- những ô cho người dùng input vào -->
+            <input type="text" id="name" placeholder="Enter Your Name">
+        </div>
+
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email
+            </label>
+            <!-- những ô cho người dùng input vào -->
+            <input type="text" id="email" placeholder="Enter Your Email">
+        </div>
+
+        <div class="form-control">
+            <label for="age" id="label-age">
+                Age
+            </label>
+            <!-- những ô cho người dùng input vào -->
+            <input type="text" id="age" placeholder="Enter Your Age">
+        </div>
+
+        <!-- Dưới đây là là một menu cho người dùng chọn -->
+        <!-- dropdown -->
+        <div class="form-control">
+            <label for="role" id="label-role">
+                Which option best describes you?
+            </label>
+            
+            <!-- những lựa chọn cho người dùng là select -->
+            <select name="role" id="role">
+                <!-- sẽ có những option cho người dùng chọn -->
+                <option value="student">Student</option>
+                <option value="intern">Intern</option>
+                <option value="professional">Professional</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+
+        <!-- hỏi người dùng có muốn recommend website của mình đến bạn bè không -->
+        <div class="form-control">
+            <label >
+                Would you like to recommend our website to your friend?
+            </label>
+            
+            <!-- cho người dùng bất kì một trong 3 câu trả lời sau -->
+            <!-- chọn 1 trong 3 thì là radio -->
+            <label for="recommed-1">
+                <input type="radio" name="recommend" id="recommend-1">
+                    Yes
+                </input>
+            </label>
+
+            <label for="recommend-2">
+                <input type="radio" name="recommend" id="recommend-2">
+                    No
+                </input>
+            </label>
+            
+            <label for="recommend-3">
+                <input type="radio" name="recommend" id="recommend-3">
+                    Maybe
+                </input>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label for="">Languages and Framework you known
+                <small>
+                    (Check all that apply)
+                </small>
+            </label>
+
+
+            <!-- các ngôn ngữ được hỏi -->
+            <label for="inp-1">
+                <input type="checkbox" name="inp"> C </input>
+            </label>
+
+            <label for="inp-2">
+                <input type="checkbox" name="inp"> C++ </input>
+            </label>
+
+            <label for="inp-3">
+                <input type="checkbox" name="inp"> C# </input>
+            </label>
+            
+            <label for="inp-4">
+                <input type="checkbox" name="inp"> Java </input>
+            </label>
+
+            <label for="inp-5">
+                <input type="checkbox" name="inp"> Javascript </input>
+            </label>
+            
+            <label for="inp-6">
+                <input type="checkbox" name="inp"> Python </input>
+            </label>
+
+            <label for="inp-7">
+                <input type="checkbox" name="inp"> Nodejs </input>
+            </label>
+
+            <label for="inp-8">
+                <input type="checkbox" name="inp"> Reactjs </input>
+            </label>
+
+            <label for="inp-9">
+                <input type="checkbox" name="inp"> Flutter </input>
+            </label>
+
+            <label for="inp-9">
+                <input type="checkbox" name="inp"> Angular </input>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label for="comment">
+                Any comments or suggestions?
+            </label>
+
+            <!-- Multi Line input thì dùng textarea -->
+            <textarea name="comment" id="comment" placeholder="Enter your comment here" ></textarea>
+        </div>
+
+        <button type="submit" value="submit">Submit</button>
+    </form>
+
+    <footer class="footer">
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a></li>
+        </ul>
+        <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+    
+        </ul>
+        <p>&copy;2021 Nadine Coelho | All Rights Reserved</p>
+      </footer>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</body>
+</html>
