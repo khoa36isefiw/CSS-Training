@@ -1,0 +1,170 @@
+/* Styling the body */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* determine w,h and background for this section */
+section {
+    width:100%;
+    height: 105vh;
+    background: url(/Lesson\ 3.\ Parallax\ Webpage/image/img_alone_in_mountain.jpg);
+    background-size: cover;
+}
+
+/* Styling the left floating section */
+section .left-box {
+    width: 50%;
+    height: 100%;
+    float: left;     /*set cho nằm nổi lên bên trái*/
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+/* css for left box content */
+.left-box .content{ 
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+    padding: 40px;
+    transition: .5s;
+}
+
+/* Styling the hover effect 
+            of left floating section */
+.left-box .content:hover  {
+    background: #e91e63;
+}
+
+/* Styling the header of left
+            floating section */
+.left-box .content h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.left-box .content p {
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+/* Styling the three events section */
+
+section .events {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    float: right;
+    box-sizing: border-box;
+}
+
+section .events ul {
+    position:absolute; 
+    top:50%;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+/* list of event */
+section .events li {
+    list-style: none;
+    background-color: #fff;
+    box-sizing: border-box;
+    margin: 15px 0;
+    height: 200px;
+}
+
+ /* Styling the time class of events section */
+
+
+section .events li .time {
+    position: relative;
+    padding: 20px;
+    background: #262626;
+    width: 30%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+    transition: 0.5s;
+
+}
+
+/* styling the hover effect of events sections */
+
+section li:hover .time {
+    background: #e91e63;
+}
+
+/* styling the header of time class of eveents section */
+
+
+section .events .time h2 {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 60px;
+    line-height: 30px;
+}
+
+/* styling for Months */
+section .events .time span {
+    font-size: 30px;
+}
+
+/* styling the details section */
+
+section .events .details {
+    padding: 20px;
+    background: #fff;
+    box-sizing: border-box;
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+
+/* styling for heading 3 */
+.events .details h3{
+    position: relative;
+    margin: 0;
+    padding:0;
+    font-size: 22px;
+}
+
+/* styling for paragraph */
+.events .details p{
+    position: relative;
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+/* styling for View details */
+.events .details a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 1.5 solid #262626;
+    margin-top: 8px;
+    font-size: 18px;
+    transition: .5s;
+}
+
+/* hover View Details */
+.events .details a:hover {
+    background: #e91e63;
+    color: #fff;
+    border-color: #e91e63;
+}
+
+
+
+
